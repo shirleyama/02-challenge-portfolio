@@ -17,7 +17,7 @@ To access the website click [Horiseon Website](https://shirleyama.github.io/02-c
 
 ## Usage 
 
-![Portfolio screenshot](assets/images/01-html-css-git-challenge-demo.png)
+![Portfolio screenshot](assets/images/shirley-portfolio-screenshot.png)
 
 ## Credits
 
