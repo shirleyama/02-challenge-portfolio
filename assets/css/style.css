@@ -20,7 +20,7 @@ h6 {
 h1{
   
     position: absolute;
-    color: #f44647;
+    color: #ba60db;
     font-weight: 800;
     font-size: 140px;
     line-height: 143px;
@@ -43,7 +43,7 @@ a{
 .page-wrapper{
   max-width:900px;
   width:100%;
-  background-color:rgba(200,200,200,0.7);
+  background-color:#efe5f3;
   margin:0;
   padding:50px 0 50px 50px;
 }
@@ -155,7 +155,7 @@ nav {
     flex-direction:column;
     align-items: flex-start;
   }
-  #descriptionWork{
+  #descriptionPortfolio{
     grid-area:work-1 ; 
     max-width:90%;
     flex-direction:column;
@@ -173,3 +173,57 @@ nav {
     flex-direction:column;
     align-items: flex-start;
   }
+
+  #portfolioGrid {
+    margin: 0 -200px 0 0;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "gui-pf  css-pf  git-pf"
+    "graphics-pf  graphics-pf  git-pf"
+    "html-pf  html-pf  html-pf"
+    ;
+  }
+  
+  #html-pf {
+    grid-area: html-pf;
+    background-image: url("../images/html_img.jpg");
+  
+  }
+  #css-pf  {
+    grid-area: css-pf;
+    background-image: url("../images/css_img.jpg");
+  }
+  
+  #graphics-pf  {
+    grid-area: graphics-pf;
+    background-image: url("../images/graphics.jpg");
+  }
+  
+  #git-pf  {
+    grid-area: git-pf;
+    background-image: url("../images/git_img.jpg");
+  }
+  
+  #gui-pf  {
+    grid-area: gui-pf;
+    background-image: url("../images/gui_img.jpg");
+  }
+  
+  .portfolioGridArea {
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+  
+  #about, #skills, #portfolio, #contact{
+    margin: 0px 5%;
+  }
+
+
+  
