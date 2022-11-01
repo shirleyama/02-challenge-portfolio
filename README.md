@@ -5,14 +5,14 @@ Unit 2 Challenge: Portfolio
 A portfolio to showcase my skills and talents to a hiring manager.
 
 ### The URL of the GitHub repository.
-[Horiseon GitHub repository](https://github.com/shirleyama/02-challenge-portfolio)
+[Shirley Thompson Portfolio on GitHub repository](https://github.com/shirleyama/02-challenge-portfolio)
 ### The URL of the functional, deployed application on GitHub Pages.
-[Horiseon Website](https://shirleyama.github.io/02-challenge-portfolio/)
+[Shirley Thompson Portfolio](https://shirleyama.github.io/02-challenge-portfolio//)
 
 
 ## Installation
 
-To access the website click [Horiseon Website](https://shirleyama.github.io/02-challenge-portfolio/), the screenshot can be found below.
+To access the website click [Shirley Thompson Portfolio](https://shirleyama.github.io/02-challenge-portfolio/), the screenshot can be found below.
 
 
 ## Usage 
