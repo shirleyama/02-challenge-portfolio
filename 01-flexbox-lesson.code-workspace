@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "01-flexbox-lesson",
+			"path": "../week_2/02-css-module/01-flexbox-lesson"
+		},
+		{
+			"name": "02-grid-media-queries-lesson",
+			"path": "../week_2/02-css-module/02-grid-media-queries-lesson"
+		},
+		{
+			"name": "03-wireframing-selectors-variables-lesson",
+			"path": "../week_2/02-css-module/03-wireframing-selectors-variables-lesson"
+		},
+		{
+			"name": "04-responsive-portfolio-lesson",
+			"path": "../week_2/02-css-module/04-responsive-portfolio-lesson"
+		},
+		{
+			"path": "../../Downloads/UkkoHTML/TEMPLATE"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "02-grid-media-queries-lesson"
+	}
+}
