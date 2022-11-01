@@ -21,6 +21,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../01-challenge-a11y"
 		}
 	],
 	"settings": {
