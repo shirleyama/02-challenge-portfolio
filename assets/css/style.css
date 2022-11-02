@@ -406,6 +406,11 @@ h3 {
   margin: 0 5% 150px 0;
   padding-top:90px;
 }
+
+#work {
+  padding-top:90px;
+}
+
 #portfolioGrid .heading {
   margin-top: -260px;
   font-weight: 600;
