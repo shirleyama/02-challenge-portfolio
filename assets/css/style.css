@@ -17,16 +17,17 @@ h5,
 h6 {
   margin: 0 0 20px 0;
 }
-h1{
-  
-    position: absolute;
-    color: #ba60db;
-    font-weight: 800;
-    font-size: 140px;
-    line-height: 143px;
-    letter-spacing: -4px;
-    z-index: 1;   
-    left: 50px;    
+
+h1 {
+  position: absolute;
+  color: #ba60db;
+  font-weight: 800;
+  font-size: 140px;
+  line-height: 143px;
+  letter-spacing: -4px;
+  z-index: 1;
+  left: 50px;
+  top: 100px;
 }
 
 h2 {
@@ -38,27 +39,27 @@ h3 {
   font-size: 1.5em;
 }
 
-
 p {
   margin: 0 0 20px 0;
-  font-size:1.1em;
-
+  font-size: 1.1em;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.page-wrapper{
-  max-width:900px;
-  width:100%;
-  background-color:#efe5f3;
-  margin:0;
-  padding:50px 0 50px 50px;
+
+.page-wrapper {
+  max-width: 900px;
+  width: 100%;
+  background-color: #efe5f3;
+  margin: 0;
+  padding: 50px 0 50px 50px;
 }
 
-nav li{
+nav li {
   list-style: none;
   text-decoration: none;
-  padding:10px;
+  padding: 10px;
   font: size 1.4em;
 }
 
@@ -75,12 +76,13 @@ nav {
   padding: 85px 100px 85px 200px;
 }
 
-.hero-banner{
-  width:100%;
-  margin:0;
-  padding:50px 0;
-  height:100vh;
+.hero-banner {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  height: 100vh;
 }
+
 .profile-pic {
   background-image: url(../images/profile-shirley-thompson.png);
   background-repeat: no-repeat;
@@ -89,216 +91,242 @@ nav {
   margin-right: -200px;
 }
 
-#about{
-  margin: 0px 5%;
-  min-height:700px;
-  height:70vh;
-  display:grid;
-  grid-template-areas:
-  'abt-1  abt-1'
-  'abt-2  abt-2'
-  'abt-3  abt-4';
-  grid-template-rows:1fr 1fr 1fr;
-  grid-template-columns:60% 40%;
+.page-section {
+  margin: 50px 0;
+  width: 100%;
 }
 
-/* Category Grid CSS */
+/* About section */
+#about {
+  margin: 0px 5%;
+  min-height: 700px;
+  height: 70vh;
+  display: grid;
+  grid-template-areas:
+    'abt-1  abt-1'
+    'abt-2  abt-2'
+    'abt-3  abt-4';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 60% 40%;
+}
 
-#descriptionAbout{
-  grid-area:abt-1 ; 
-  max-width:90%;
-  flex-direction:column;
+/* About Grid CSS */
+
+#descriptionAbout {
+  grid-area: abt-1;
+  max-width: 90%;
+  flex-direction: column;
   align-items: flex-start;
-  }
-#imgAbout{
-  grid-area:abt-2;
-  height:260px;
-  margin-right:-200px;
-  }
+}
 
-#secondaryAbout{
-  grid-area:abt-3 ; 
-  flex-direction:column;
+#imgAbout {
+  grid-area: abt-2;
+  height: 260px;
+  margin-right: -200px;
+}
+
+#secondaryAbout {
+  grid-area: abt-3;
+  flex-direction: column;
   align-items: flex-start;
-  }
+}
 
-#imgAbout img{ 
-  height:260px;
-      }
+#imgAbout img {
+  height: 260px;
+}
 
-  #contactAbout a, #contactAbout p{
-    color:#fff;
-    padding:0 0 20px 0;
-  }
+#contactAbout a,
+#contactAbout p {
+  color: #fff;
+  padding: 0 0 20px 0;
+}
 
+#contactAbout {
+  grid-area: abt-4;
+  cursor: pointer;
+  align-items: center;
+  margin: -20px -100px 0 0;
+  position: relative;
+  top: 0px;
+  background: #ba60db;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  #contactAbout {
-    grid-area: abt-4;
-    cursor: pointer;
-    align-items: center;
-    margin: -20px -100px 0 0;
-    position: relative;
-    top: 0px;
-    background: #ba60db;
-    padding: 30px;
-  
-  }
-  .aboutArea{
-  background-position:right;
-  background-repeat:no-repeat;
+.aboutArea {
+  background-position: right;
+  background-repeat: no-repeat;
   background-size: contain;
-  align-items:center;
-  flex-direction:column;
-  display:flex;
-  position:relative;
-  margin:20px 0;
- 
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+}
 
-  }
+/* Work section */
 
-  .page-section{margin:50px 0;width:100%;}
-  
- 
-  #descriptionSkills{
-    grid-area:skills-1 ; 
-    max-width:90%;
-    flex-direction:column;
-    align-items: flex-start;
-  }
-  #descriptionPortfolio{
-    grid-area:work-1 ; 
-    max-width:90%;
-    flex-direction:column;
-    align-items: flex-start;
-  }
+#workGrid {
+  margin: 0 -200px 0 0;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 34% 33% 33%;
+  grid-template-areas:
+    "challenge-02 challenge-01 prestudy"
+  ;
+}
 
-  #descriptionWork{
-    grid-area:work-1 ; 
-    max-width:90%;
-    flex-direction:column;
-    align-items: flex-start;
-  }
-  
-  #descriptionContact{
-    grid-area:contact-1 ; 
-    max-width:90%;
-    flex-direction:column;
-    align-items: flex-start;
-  }
+#challenge-02 {
+  grid-area: challenge-02;
+  background-image: url("../images/portfolio.png");
 
-  #portfolioGrid {
-    margin: 0 -200px 0 0;
-    display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
+}
+
+#challenge-01 {
+  grid-area: challenge-01;
+  background-image: url("../images/refactor.png");
+}
+
+#prestudy {
+  grid-area: prestudy;
+  background-image: url("../images/study-guide.png");
+}
+
+.workGridArea {
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  justify-content: space-between;
+  border: 1px solid rgb(119, 119, 146);
+}
+
+#workGrid .heading {
+  margin-top: -30px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/* Skills section */
+
+#descriptionSkills {
+  grid-area: skills-1;
+  max-width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#descriptionWork {
+  grid-area: work-1;
+  max-width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#descriptionContact {
+  grid-area: contact-1;
+  max-width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Portfolio section */
+
+#descriptionPortfolio {
+  grid-area: work-1;
+  max-width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#portfolioGrid {
+  margin: 0 -200px 0 0;
+  display: grid;
+  grid-template-rows: 180px 180px 180px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
     "gui-pf  css-pf  git-pf"
     "graphics-pf  graphics-pf  git-pf"
     "html-pf  html-pf  html-pf"
-    ;
-  }
-  
-  #html-pf {
-    grid-area: html-pf;
-    background-image: url("../images/html_img.jpg");
-  
-  }
-  #css-pf  {
-    grid-area: css-pf;
-    background-image: url("../images/css_img.jpg");
-  }
-  
-  #graphics-pf  {
-    grid-area: graphics-pf;
-    background-image: url("../images/graphics.jpg");
-  }
-  
-  #git-pf  {
-    grid-area: git-pf;
-    background-image: url("../images/git_img.jpg");
-  }
-  
-  #gui-pf  {
-    grid-area: gui-pf;
-    background-image: url("../images/gui_img.jpg");
-  }
-  
-  .portfolioGridArea {
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    cursor: pointer;
-    display: grid;
-    align-content: end;
-  }
-  
-  #about,  #portfolio,  #skills, #contact{
-    margin: 0 5% 150px 5%;
-  }
-
-  #work{
-    margin-top: 200px;
-  }
-  
-
-
-  #workGrid {
-    margin: 0 -200px 0 0;
-    display: grid;
-    grid-template-rows: 400px;
-    grid-template-columns:34% 33% 33%;
-    grid-template-areas:
-    "challenge-02 challenge-01 prestudy"
-    ;
-  }
-  
-  #challenge-02 {
-    grid-area: challenge-02;
-    background-image: url("../images/portfolio.png");
-  
-  }
-  #challenge-01  {
-    grid-area: challenge-01;
-    background-image: url("../images/refactor.png");
-  }
-  
-  #prestudy  {
-    grid-area: prestudy;
-    background-image: url("../images/study-guide.png");
-  }
-  
-  
-  .workGridArea {
-    background-position: top right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    cursor: pointer;
-    display: grid;
-    justify-content: space-between;
-    border: 1px solid rgb(119, 119, 146);
-  }
-
-  #workGrid .heading {
-    margin-top: -30px;
-    font-weight: 600;
-    font-size:1.2em;
-  }
-  
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  ;
 }
 
-/* Style the submit button with a specific background color etc */
+#gui-pf {
+  grid-area: gui-pf;
+  background-image: url("../images/gui_img.jpg");
+}
+
+#css-pf {
+  grid-area: css-pf;
+  background-image: url("../images/css_img.jpg");
+}
+
+#graphics-pf {
+  grid-area: graphics-pf;
+  background-image: url("../images/graphics.jpg");
+}
+
+#git-pf {
+  grid-area: git-pf;
+  background-image: url("../images/git_img.jpg");
+}
+
+#html-pf {
+  grid-area: html-pf;
+  background-image: url("../images/html_img.jpg");
+
+}
+
+.portfolioGridArea {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#portfolio .heading {
+  font-weight: 600;
+  font-size: 1.2em;
+  background: rgba(255,255,255,0.7);
+  padding:0 5px;
+}
+
+#about,
+#portfolio,
+#skills,
+#contact {
+  margin: 0 5% 15px 5%;
+}
+
+#work {
+  margin: 0 5% 20px 5%;
+}
+
+
+
+/* Contact section */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+    /* Allow  vertical resize of the textarea */
+}
+
+/* Submit button */
 input[type=submit] {
   background-color: #ba60db;
   color: white;
@@ -308,120 +336,144 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* Hovering over button changes colour */
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
+/* Form styles */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-  /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-h1{
-font-size: 40px;
-line-height: 43px;
-letter-spacing: 1px;
-left: 60px;
-top: 110px;
-}
-.hero-banner {
-  height: 70vh;
-}
+/*---------- Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-.page-wrapper {
-  max-width: 450px;
-  width: 100%;
-  padding: 20px;
-}
-.profile-pic {
-  background-position: 50% 0%;
-  margin-right: 0;
-}
+  /* Styles */
+  h1 {
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 1px;
+    left: 60px;
+    top: 110px;
+  }
 
-#imgAbout {
-display:none;
-}
+  h2 {
+    font-size: 1.4em;
+  }
 
-nav {
-  position: fixed;
-  top: 0;
-  max-width: 100%;
-  width: 100%;
-  height:100px;
-  z-index: 40;
-  overflow: hidden;
-  background: azure;
-  padding:20px;
-}
+  h3 {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+
+  .page-wrapper {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+  }
+/* Hero mobile section */
+  .hero-banner {
+    height: 70vh;
+  }
+
+  .profile-pic {
+    background-position: 50% 0%;
+    margin-right: 0;
+  }
+
+  #imgAbout {
+    display: none;
+  }
+
+/* Nav mobile section */
+  nav {
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    z-index: 40;
+    overflow: hidden;
+    background: azure;
+    padding: 20px;
+  }
+
   nav ul {
     display: flex;
     padding-left: 0;
   }
 
-h2 {
-  font-size: 1.4em;
-}
-h3 {
-  width: 100%;
-  font-size: 1.2em;
-}
-#contactAbout {
-  margin: 20px 50px 0 -230px;
-}
-#workGrid {
-  margin: 0;
-  display: grid;
-  grid-template-rows: 400px 400px 400px;
-  grid-template-columns:1fr;
-  grid-template-areas:
-  "challenge-02"
-  "challenge-01"
-  "prestudy"
-  ;
-}
-.workGridArea,.portfolioGridArea {
-  margin: 0px 0 70px 0;
-}
-#portfolioGrid {
-  margin: 0;
-  display: grid;
-  grid-template-rows: 300px 300px 300px 300px 300px;
-  grid-template-columns: 1fr;
-  grid-template-areas: 
-  "gui-pf "
-  "css-pf" 
-  "git-pf" 
-  "graphics-pf" 
-  "html-pf ";
-}
-#about, #portfolio, #skills, #contact {
-  margin: 0 5% 150px 0;
-  padding-top:90px;
-}
+  nav ul li{
+    padding: 0 15px 0 0;
+  }
 
-#work {
-  padding-top:90px;
-}
+    /* About mobile section */
+  #contactAbout {
+    margin: 20px 50px 0 -230px;
+  }
 
-#portfolioGrid .heading {
-  margin-top: -260px;
-  font-weight: 600;
-  font-size: 1.2em;
-}
-}
+  /* Work mobile section */
 
+  #workGrid {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "challenge-02"
+      "challenge-01"
+      "prestudy"
+    ;
+  }
+
+  .workGridArea,
+  .portfolioGridArea {
+    margin: 30px 0 30px 0;
+  }
+
+/* Portfolio mobile section */
+  #portfolioGrid {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "gui-pf "
+      "css-pf"
+      "git-pf"
+      "graphics-pf"
+      "html-pf ";
+  }
+
+  #about, #work, #skills, #portfolio, #contact {
+    margin: 0 5% 15px 0;
+    padding-top: 90px;
+  }
+}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+
+  /* Styles */
+  nav {
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    z-index: 40;
+    overflow: hidden;
+    background: azure;
+    padding: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-evenly;
+  }
 }
