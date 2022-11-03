@@ -95,8 +95,22 @@ nav {
   margin: 50px 0;
   width: 100%;
 }
+/* Main Section */
+
+/* Common areas in Main Section */
+#about,
+#portfolio,
+#skills,
+#contact {
+  margin: 120px 5% 15px 5%;
+}
+
+#work {
+  margin: 150px 5% 20px 5%;
+}
 
 /* About section */
+
 #about {
   margin: 0px 5%;
   min-height: 700px;
@@ -110,7 +124,6 @@ nav {
   grid-template-columns: 60% 40%;
 }
 
-/* About Grid CSS */
 
 #descriptionAbout {
   grid-area: abt-1;
@@ -126,9 +139,8 @@ nav {
 }
 
 #secondaryAbout {
-  grid-area: abt-3;
-  flex-direction: column;
-  align-items: flex-start;
+
+  display:none;
 }
 
 #imgAbout img {
@@ -298,17 +310,6 @@ nav {
   padding:0 5px;
 }
 
-#about,
-#portfolio,
-#skills,
-#contact {
-  margin: 0 5% 15px 5%;
-}
-
-#work {
-  margin: 0 5% 20px 5%;
-}
-
 
 
 /* Contact section */
@@ -407,28 +408,28 @@ input[type=submit]:hover {
     padding-left: 0;
   }
 
-  nav ul li{
-    padding: 0 15px 0 0;
+  nav ul li {
+      padding: 0 15px 0 0;
   }
-
+  
     /* About mobile section */
   #contactAbout {
-    margin: 20px 50px 0 -230px;
-  }
-
-  /* Work mobile section */
-
+      margin: 20px 0px 0 -200px;
+    }
+  
+    /* Work mobile section */
+  
   #workGrid {
-    margin: 0;
-    display: grid;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "challenge-02"
-      "challenge-01"
-      "prestudy"
-    ;
-  }
+      margin: 0;
+      display: grid;
+      grid-template-rows: 400px 400px 400px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "challenge-02"
+        "challenge-01"
+        "prestudy"
+      ;
+    }
 
   .workGridArea,
   .portfolioGridArea {
@@ -456,9 +457,47 @@ input[type=submit]:hover {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+@media only screen and (min-device-width : 480px) and (max-device-width : 811px) {
 
-  /* Styles */
+   /* Styles */
+   h1 {
+    font-size: 60px;
+    line-height: 65px;
+    letter-spacing: 1px;
+    left: 60px;
+    top: 110px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+
+  .page-wrapper {
+    max-width: 810px;
+    width: 100%;
+    padding: 20px;
+  }
+/* Hero mobile section */
+  .hero-banner {
+    height: 70vh;
+  }
+
+  .profile-pic {
+    background-position: 50% 0%;
+    margin-right: 0;
+  }
+
+  #imgAbout {
+display:none;
+  }
+
+/* Nav mobile section */
   nav {
     position: fixed;
     top: 0;
@@ -475,5 +514,52 @@ input[type=submit]:hover {
     display: flex;
     padding-left: 0;
     justify-content: space-evenly;
+  }
+
+  nav ul li {
+      padding: 0 15px 0 0;
+  }
+  
+    /* About mobile section */
+  #contactAbout {
+      margin: 20px 0px 0 -200px;
+    }
+  
+    /* Work mobile section */
+  
+  #workGrid {
+      margin: 0;
+      display: grid;
+      grid-template-rows: 500px 500px 500px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "challenge-02"
+        "challenge-01"
+        "prestudy"
+      ;
+    }
+
+  .workGridArea,
+  .portfolioGridArea {
+    margin: 30px 0 30px 0;
+  }
+
+/* Portfolio mobile section */
+  #portfolioGrid {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "gui-pf" 
+      "css-pf"
+      "git-pf" 
+      "graphics-pf"
+      "html-pf ";
+  }
+
+  #about, #work, #skills, #portfolio, #contact {
+    margin: 0 5% 15px 0;
+    padding-top: 90px;
   }
 }
